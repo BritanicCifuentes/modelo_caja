@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejercicio 3</title>
+<style media="screen" type="text/css">
+html, body {
+margin: 0;
+padding: 0;
+}
+.pais {
+    margin-left: 25px;
+}
+/* España */
+
+.square__red {
+background-color: rgb(247, 10, 10);
+height: 180px;
+width: 250px;
+margin-left: 20px;
+}
+.square__yellow:before {
+background-color: rgb(247, 247, 8);
+position: absolute;
+content: "";
+height: 90px;
+width: 250px;
+top: 44px;
+left: 20px;
+}
+/* Dinamarca */
+
+.square__red3 {
+background-color: rgb(247, 10, 10);
+height: 180px;
+width: 250px;
+margin-left: 20px;
+}
+.square__white2:after {
+background-color: rgb(255, 255, 254);
+position: absolute;
+content: "";
+height: 180px;
+width: 30px;
+top: 0;
+left: 360px;
+}
+.square__white2:before {
+background-color: rgb(255, 255, 254);
+position: absolute;
+content: "";
+width: 250px;
+height: 30px;
+top: 75px;
+left: 294px;
+}
+
+/* Emiratos Árabes */
+
+.square__red1 {
+background-color: rgb(231, 10, 10);
+height: 180px;
+width: 55px;
+float: left;
+margin-left: 20px;
+}
+.square__green {
+background-color: rgb(33, 109, 9);
+height: 60px;
+width: 250px;
+z-index: -2;
+margin-left: 20px;
+}
+.square__white {
+background-color: rgb(255, 255, 254);
+height: 60px;
+width: 250px;
+z-index: -2;
+margin-left: 20px;
+}
+.square__black {
+background-color: rgb(3, 3, 3);
+height: 60px;
+width: 250px;
+z-index: -2;
+margin-left: 20px;
+}
+/* Japón */
+
+.square__red2 {
+width: 70px;
+height: 70px;
+background: rgb(231, 10, 10);
+border-radius: 1000px;
+float: left;
+margin-left: 20px;
+}
+.square__white1 {
+    border: 2px solid #808080;
+    background-color: rgb(255, 255, 254);
+    height: 180px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    margin-left: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5" style="display: inline-block;">
+                <section class="square square__red"></section>
+                <section class="square square__yellow"></section>
+                <p class="pais">España</p>
+            </div>
+            <div class="col-sm-5" style="display: inline-block;">
+                <section class="square square__red3"></section>
+                <section class="square square__white2"></section>
+                <p class="pais">Dinamarca</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5" style="display: inline-block;">
+                <section class="square square__red1"></section>
+                <section class="square square__green"></section>
+                <section class="square square__white"></section>
+                <section class="square square__black"></section>
+                <p class="pais">Emiratos Árabes</p>
+            </div>
+            <div class="col-sm-5" style="display: inline-block;">
+                <section class="square square__white1"><section class="square square__red2"></section></section>
+                <p class="pais">Japón</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
